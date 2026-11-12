@@ -1,0 +1,27 @@
+{
+  "name": "@keep/core",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "development": "./src/index.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "swc src -d dist --strip-leading-paths --ignore \"**/*.test.ts\""
+  },
+  "dependencies": {
+    "@nestjs/common": "12.4.2",
+    "@nestjs/core": "12.4.2",
+    "kysely": "0.29.8",
+    "mysql2": "3.24.6",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2",
+    "semver": "7.8.6",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/semver": "7.5.8"
+  }
+}

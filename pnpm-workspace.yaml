@@ -1,0 +1,7 @@
+packages:
+  - 'core'
+  - 'apps/*'
+  - 'plugins/*'
+  - 'packages/*'
+onlyBuiltDependencies:
+  - '@swc/core'
