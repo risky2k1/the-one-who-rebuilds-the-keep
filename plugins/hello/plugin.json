@@ -1,0 +1,9 @@
+{
+  "id": "hello",
+  "name": "Hello",
+  "version": "0.1.0",
+  "requires": {
+    "core": ">=0.1.0"
+  },
+  "entry": "./src/provider"
+}

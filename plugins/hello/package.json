@@ -1,0 +1,14 @@
+{
+  "name": "@keep/plugin-hello",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "swc src database -d dist --ignore \"**/*.test.ts\""
+  },
+  "dependencies": {
+    "@keep/core": "workspace:*",
+    "@nestjs/common": "12.4.2",
+    "kysely": "0.29.8"
+  }
+}
