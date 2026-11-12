@@ -27,3 +27,5 @@ export type {
 } from './plugins/service-provider.js';
 export { pluginMigrationsDir, resolvePluginFile } from './plugins/paths.js';
 export { bootPlugins, registerPlugins } from './plugins/lifecycle.js';
+export { preparePlugins } from './plugins/prepare.js';
+export type { PreparePluginsOptions } from './plugins/prepare.js';
