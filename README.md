@@ -23,6 +23,22 @@ pnpm test:int
 
 # Build production artifacts
 pnpm build
+
+# Khởi chạy development server (source mode qua SWC)
+KEEP_DATABASE_URL=mysql://cms_user:changeme_db_password@127.0.0.1:3306/keep_db pnpm dev
+
+# Chạy production build (dist mode)
+pnpm build
+KEEP_DATABASE_URL=mysql://cms_user:changeme_db_password@127.0.0.1:3306/keep_db node apps/server/dist/main.js
+```
+
+## Docker Build
+```bash
+# Build dev target
+docker build --target dev -t keep:dev .
+
+# Build prod target
+docker build --target prod -t keep:prod .
 ```
 
 ## Architecture

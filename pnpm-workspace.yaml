@@ -3,5 +3,5 @@ packages:
   - 'apps/*'
   - 'plugins/*'
   - 'packages/*'
-onlyBuiltDependencies:
-  - '@swc/core'
+allowBuilds:
+  '@swc/core': true
