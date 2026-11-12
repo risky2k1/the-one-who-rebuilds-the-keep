@@ -11,7 +11,8 @@
     "build": "pnpm -r build",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test:unit": "vitest run --project unit",
-    "test:int": "vitest run --project int"
+    "test:int": "vitest run --project int",
+    "lint:deps": "depcruise core apps plugins --config .dependency-cruiser.cjs"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
@@ -24,6 +25,7 @@
     "@swc/core": "1.16.22",
     "@types/node": "24.19.2",
     "@types/supertest": "6.0.2",
+    "dependency-cruiser": "18.7.2",
     "kysely": "0.29.8",
     "mysql2": "3.24.6",
     "reflect-metadata": "0.2.2",
