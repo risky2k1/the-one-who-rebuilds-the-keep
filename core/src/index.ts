@@ -29,3 +29,7 @@ export { pluginMigrationsDir, resolvePluginFile } from './plugins/paths.js';
 export { bootPlugins, registerPlugins } from './plugins/lifecycle.js';
 export { preparePlugins } from './plugins/prepare.js';
 export type { PreparePluginsOptions } from './plugins/prepare.js';
+export { CoreModule } from './nest/core.module.js';
+export type { CoreModuleOptions } from './nest/core.module.js';
+export { PluginsHostModule } from './nest/plugins-host.module.js';
+export { KYSELY, REGISTRIES } from './nest/tokens.js';

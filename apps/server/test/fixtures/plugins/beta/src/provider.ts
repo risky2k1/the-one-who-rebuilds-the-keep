@@ -1,0 +1,14 @@
+import type { ServiceProvider } from '@keep/core';
+
+export default {
+  register: () => {
+    ((globalThis as unknown as { __keepTrace: string[] }).__keepTrace ??= []).push(
+      'register:beta'
+    );
+  },
+  boot: () => {
+    ((globalThis as unknown as { __keepTrace: string[] }).__keepTrace ??= []).push(
+      'boot:beta'
+    );
+  },
+} satisfies ServiceProvider;
