@@ -18,3 +18,12 @@ export type {
   MigrationsTable,
   PluginsStateTable,
 } from './migrations/types.js';
+export type {
+  BootContext,
+  LoadedPlugin,
+  PluginMode,
+  RegisterContext,
+  ServiceProvider,
+} from './plugins/service-provider.js';
+export { pluginMigrationsDir, resolvePluginFile } from './plugins/paths.js';
+export { bootPlugins, registerPlugins } from './plugins/lifecycle.js';
